@@ -593,7 +593,7 @@ color:#fff;
 }
 
 a.contact_btn {
-    background: #fff;
+    background: #FF00FF;
     text-transform: uppercase;
     display: block;
     width: 176px;
@@ -612,7 +612,7 @@ a.contact_btn {
 }
 
 a.contact_btn:hover {
-    background: #ED5441;
+    background: #40E0D0;
     color: #fff;
 }
 
