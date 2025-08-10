@@ -334,7 +334,7 @@ html, body {
 }
 
 .navStyle ul li a:hover {
-    color: #ED5441;
+    color: #40E0D0;
     background-color: rgba(237, 84, 65, 0.1);
 }
 
@@ -430,9 +430,9 @@ html, body {
     }
     
     .navStyle ul li a:hover {
-        background: #ED5441;
+        background: #40E0D0;
         color: white;
-        border-color: #ED5441;
+        border-color: #40E0D0;
     }
 }
 
@@ -478,7 +478,7 @@ html, body {
 }
 
 .navbar-inverse .navbar-toggle .icon-bar {
-    background: #ED5441;
+    background: #40E0D0;
 }
 
 .borderLeft {
