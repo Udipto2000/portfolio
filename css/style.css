@@ -2,20 +2,6 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
 @import url(http://fonts.googleapis.com/css?family=Signika:400,600);
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Reset
 ---------------------------------*/
 ul {
@@ -44,17 +30,6 @@ a, a:hover, a:active {
 }
 
 /* Common style */
-
-
-
-
-
-
-
-
-
-
-
 
 
 .grid figure {
@@ -248,15 +223,6 @@ html, body {
     position: relative;
     z-index: 2;
 }
-
-
-
-
-
-
-
-
-
 
 
 /* Nav Styles
@@ -465,16 +431,10 @@ html, body {
 
 .mrgTop {
     margin-top: 30px;
-
-
-
 }
+
 /* Top_content
 ---------------------------------*/
-
-
-
-
 .top_cont_outer {
     background: #40E0D0;
     position: relative;
@@ -536,27 +496,15 @@ a.read_more:hover {
     border: 1px solid #40E0D0;
 }
 
-	
-
-
-
-
-
-
-
 /* Services
 ---------------------------------*/
 
 #service {
     padding: 60px 0px;
     background: #CE1139;
-
 }
 #service h2{
   color: #fff;
-
-
-
 }
 
 .service_wrapper {
@@ -564,7 +512,6 @@ a.read_more:hover {
 }
 
 .service_section {
-
 }
 
 .service_block {
@@ -580,9 +527,7 @@ a.read_more:hover {
     margin: 0px auto 25px; 
 }
 
- 
-
-.service_icon span {
+ .service_icon span {
     background: transparent; 
     display: block;
     height: 100%;
@@ -626,10 +571,6 @@ color:#fff;
 
 /* Latest Work
 ---------------------------------*/
-
-
-
-
 
 #work_outer {
     background: #f9f9f9;
@@ -715,87 +656,8 @@ img {
     padding-bottom: 60px;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* Happy Clients
 ---------------------------------*/
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 #clients {
     padding: 60px 0px;
@@ -1047,10 +909,6 @@ border: 1px solid #CE1139;
     color: #dd4b39;
 }
  
-
-
-
-
 .form {
     margin: 0 66px 0 30px;
 }
@@ -1108,21 +966,6 @@ border: 1px solid #CE1139;
 .footer_bottom span a:hover {
     color: #fff;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 /* Animation Timers
@@ -1137,8 +980,6 @@ border: 1px solid #CE1139;
 
 /*new_profolio*/
 
-
-
 	
 /* Portfolio */	
 	
@@ -1148,9 +989,6 @@ border: 1px solid #CE1139;
 @@ -1469,10 +1345,7 @@ border: 1px solid #CE1139;
     padding: 60px 0 40px;
 }
-
-
-
 /* Portfolio Filters */	
 
 #filters {
@@ -1301,11 +1139,8 @@ border: 1px solid #CE1139;
     transition: opacity .3s .2s, margin-top .3s .2s;
 }
 	
-	
-	
-	
-/* Portfolio Isotope Transitions */	
 
+/* Portfolio Isotope Transitions */	
 
 .isotope, .isotope .isotope-item {
     -webkit-transition-duration: 0.8s;
@@ -1313,12 +1148,7 @@ border: 1px solid #CE1139;
 @@ -1725,15 +1562,14 @@ border: 1px solid #CE1139;
     transition-duration: 0s;
 }
-
-
-
 /* Portfolio Expander */	
-
-
 
 #project_container {
     display: none;
@@ -1398,45 +1228,7 @@ background-repeat: no-repeat;
 background-position: right;
 background-size: auto 59%;
 background-position-y: 150px;
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 
 
@@ -1568,100 +1360,11 @@ width: 100%;
 }
 .team_area {
 width: 99%;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
 .read_more2{
 display:none;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 }
-
-
-
-
-
-
 }
-
-
-
 
 .rt-box {
 float: left;
