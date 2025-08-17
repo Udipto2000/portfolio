@@ -2,15 +2,13 @@
 @import url(http://fonts.googleapis.com/css?family=Raleway:800,700,400);
 @import url(http://fonts.googleapis.com/css?family=Signika:400,600);
 
-/* Remove side scroll and prevent horizontal overflow */
-html, body {
+{
     overflow-x: hidden !important;
     width: 100vw;
     max-width: 100vw;
 }
 
-/* Reset
----------------------------------*/
+
 ul {
     list-style: none;
 }
@@ -268,179 +266,106 @@ p {
 }
     
 
-/* Nav Styles
----------------------------------*/
-/* Change the navigation bar to black color */
-.navbar-inverse {
+.navbar-inverse, .navbar {
     background-color: #000 !important;
     border-color: #000 !important;
 }
 
-.navbar {
-    background-color: #000 !important;
-    border-color: #000 !important;
-}
-
-.navbar-inverse .navbar-nav > li > a {
+/* Main navigation links: white text */
+.navbar-inverse .navbar-nav > li > a,
+.navStyle ul li > a {
     color: #fff !important;
+    background: transparent !important;
+    transition: color 0.2s, background 0.2s;
 }
 
-.navbar-inverse .navbar-nav > li > a:hover, 
-.navbar-inverse .navbar-nav > li > a:focus {
+/* Main nav hover/active: yellow highlight */
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus,
+.navStyle ul li > a:hover,
+.navStyle ul li > a:focus {
     color: #FFC000 !important;
-    background-color: transparent !important;
+    background: #181818 !important;
 }
 
-.navStyle ul li a {
-    color: #fff !important;
-}
-
-/* Optional: Active/current page link styling */
-.navbar-inverse .navbar-nav > .active > a, 
-.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a,
+.navbar-inverse .navbar-nav > .active > a:hover,
 .navbar-inverse .navbar-nav > .active > a:focus {
     color: #FFC000 !important;
-    background-color: #111 !important;
+    background: #181818 !important;
 }
 
-.navStyle ul {
-    list-style: none;
-    padding: 0px;
-}
-
+/* --- SUBMENU STYLING --- */
 .navStyle ul li {
-    display: inline-block;
-    margin: 0 5px;
     position: relative;
 }
 
-.navStyle ul li:first-child {
-    /*margin:0px;*/
-}
-
-.navStyle ul li:last-child {
-    margin: 0 0 0 23px;
-}
-
-.navStyle ul li a {
-    display: block;
-    font-size: 14px;
-    color: #222222;
-    font-family: 'Raleway', sans-serif;
-    text-decoration: none;
-    text-transform: uppercase;
-    font-weight: 600;
-    transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -webkit-transition: all 0.2s ease-in-out;
-}
-
-/* Distinct submenu hover colors */
-/* Assumes submenus have classes like .submenu-1, .submenu-2, etc. */
-
-.navStyle ul li.submenu-1 > a:hover,
-.navStyle ul li.submenu-1:hover > a {
-    background-color: #ED5441;
-    color: #fff;
-}
-
-.navStyle ul li.submenu-2 > a:hover,
-.navStyle ul li.submenu-2:hover > a {
-    background-color: #49b5e7;
-    color: #fff;
-}
-
-.navStyle ul li.submenu-3 > a:hover,
-.navStyle ul li.submenu-3:hover > a {
-    background-color: #CA133A;
-    color: #fff;
-}
-
-.navStyle ul li.submenu-4 > a:hover,
-.navStyle ul li.submenu-4:hover > a {
-    background-color: #FFD700;
-    color: #222;
-}
-
-/* fallback: default hover for others */
-.navStyle ul li:not(.submenu-1):not(.submenu-2):not(.submenu-3):not(.submenu-4) > a:hover {
-    color: #ED5441;
-    background-color: transparent;
-}
-
-.navStyle > li > a:hover, .nav > li > a:focus {
-    text-decoration: none;
-    color: #ED5441;
-    background-color: transparent;
-}
-
-.navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
-    color: #CA133A;
-    background-color: transparent;
-}
-
-.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #CB143B;
-    background-color: transparent;
-}
-
-.navStyle > li.active > a,
-.navStyle > li.active > a:hover {
-    text-decoration: none;
-    color: #ED5441;
-    background-color: transparent;
-}
-
-/* Submenu styles */
 .navStyle ul li ul {
     display: none;
     position: absolute;
     left: 0;
     top: 100%;
-    background: #fff;
     min-width: 180px;
     z-index: 9999;
-    box-shadow: 0 4px 8px rgba(0,0,0,0.07);
+    background: #181818;
     border-radius: 0 0 5px 5px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.07);
+    padding: 0;
 }
-.navStyle ul li:hover > ul {
+
+.navStyle ul li:hover > ul,
+.navStyle ul li:focus-within > ul {
     display: block;
 }
+
 .navStyle ul li ul li {
     display: block;
     margin: 0;
 }
+
+/* --------- SUBMENU ITEM COLORS --------- */
+/* Assign .submenu-1, .submenu-2, .submenu-3, etc. to your submenu <li> for different text and hover colors */
+
+/* Default submenu link style */
 .navStyle ul li ul li a {
-    color: #222;
-    font-weight: 400;
-    font-size: 13px;
+    display: block;
+    padding: 10px 22px;
+    font-size: 14px;
+    color: #4FC3F7 !important;  /* Light blue as default for submenu text */
+    background: transparent;
+    font-weight: 500;
     text-transform: none;
-    padding: 10px 20px;
-    background: none;
     border-radius: 0;
     transition: background 0.2s, color 0.2s;
 }
 
-/* Distinct submenu item hover colors */
-.navStyle ul li ul li.submenu-1 a:hover {
-    background: #ED5441;
-    color: #fff;
+/* Different submenu text (UNHOVERED) colors */
+.navStyle ul li ul li.submenu-1 > a { color: #4FC3F7 !important; } /* Light Blue */
+.navStyle ul li ul li.submenu-2 > a { color: #81C784 !important; } /* Green */
+.navStyle ul li ul li.submenu-3 > a { color: #FFD54F !important; } /* Yellow */
+.navStyle ul li ul li.submenu-4 > a { color: #FF8A65 !important; } /* Orange */
+.navStyle ul li ul li.submenu-5 > a { color: #BA68C8 !important; } /* Purple */
+.navStyle ul li ul li.submenu-6 > a { color: #E57373 !important; } /* Red */
+.navStyle ul li ul li:not(.submenu-1):not(.submenu-2):not(.submenu-3):not(.submenu-4):not(.submenu-5):not(.submenu-6) > a {
+    color: #B0BEC5 !important; /* Default grey */
 }
-.navStyle ul li ul li.submenu-2 a:hover {
-    background: #49b5e7;
-    color: #fff;
+
+/* --------- SUBMENU HOVER COLORS --------- */
+.navStyle ul li ul li.submenu-1 > a:hover { background: #4FC3F7 !important; color: #181818 !important; }
+.navStyle ul li ul li.submenu-2 > a:hover { background: #81C784 !important; color: #181818 !important; }
+.navStyle ul li ul li.submenu-3 > a:hover { background: #FFD54F !important; color: #181818 !important; }
+.navStyle ul li ul li.submenu-4 > a:hover { background: #FF8A65 !important; color: #181818 !important; }
+.navStyle ul li ul li.submenu-5 > a:hover { background: #BA68C8 !important; color: #fff !important; }
+.navStyle ul li ul li.submenu-6 > a:hover { background: #E57373 !important; color: #fff !important; }
+.navStyle ul li ul li:not(.submenu-1):not(.submenu-2):not(.submenu-3):not(.submenu-4):not(.submenu-5):not(.submenu-6) > a:hover {
+    background: #37474F !important;
+    color: #fff !important;
 }
-.navStyle ul li ul li.submenu-3 a:hover {
-    background: #CA133A;
-    color: #fff;
-}
-.navStyle ul li ul li.submenu-4 a:hover {
-    background: #FFD700;
-    color: #222;
-}
-.navStyle ul li ul li:not(.submenu-1):not(.submenu-2):not(.submenu-3):not(.submenu-4) a:hover {
-    background: #eee;
-    color: #CA133A;
+
+/* Make sure submenu hover is visually distinct from main nav hover */
+.navStyle ul li ul li > a:hover,
+.navStyle ul li ul li > a:focus {
+    text-decoration: none;
 }
 
 .borderLeft {
