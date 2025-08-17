@@ -13,7 +13,7 @@ ul {
 }
 
 img {
-    max-width: 90%;
+    max-width: 100%;
 }
 
 a, a:hover, a:active {
@@ -45,7 +45,7 @@ a, a:hover, a:active {
 /* Common style */
 .grid figure {
 	position: relative;
-	float: middle;
+	float: left;
 	overflow: hidden;
 	margin: 10px 1%;
 	min-width: 320px;
@@ -2007,7 +2007,7 @@ width: 100%;
 width: 99%;
 }
 .read_more2{
-display: none;
+display:none;
 }
 }
 .rt-box {
