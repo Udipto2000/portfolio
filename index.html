@@ -11,6 +11,86 @@
 <link href="css/font-awesome.css" rel="stylesheet" type="text/css"> 
 <link href="css/animate.css" rel="stylesheet" type="text/css">
 
+<style>
+/* Remove horizontal scroll bar for the whole page */
+html, body {
+  overflow-x: hidden !important;
+  width: 100vw;
+  max-width: 100vw;
+}
+
+/* Trim Technical Projects grid to fit the page */
+#portfolio_wrapper {
+  display: flex !important;
+  flex-wrap: wrap !important;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 24px 16px;
+  padding: 0 0 32px 0;
+  width: 100%;
+  margin: 0 auto;
+  min-height: unset !important;
+  height: auto !important;
+  overflow: visible !important;
+  position: relative !important;
+}
+
+/* Each project box fits responsively */
+#portfolio_wrapper .portfolio-item {
+  position: relative !important;
+  float: none !important;
+  width: 300px !important;
+  max-width: 90vw !important;
+  min-width: 220px !important;
+  margin: 0 !important;
+  height: 260px !important;
+  max-height: 320px !important;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+/* Project images constrained */
+#portfolio_wrapper .portfolio_img img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 6px 6px 0 0;
+}
+
+/* Project caption trim */
+#portfolio_wrapper .portfolio-item figcaption {
+  padding: 0.5em 1em 0.9em 1em;
+  font-size: 1em;
+  background: #222;
+  color: #fff;
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  top: 140px;
+  border-radius: 0 0 6px 6px;
+  transition: background 0.2s;
+  overflow: hidden;
+  min-height: 60px;
+  max-height: 110px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Responsive fixes */
+@media (max-width: 900px) {
+  #portfolio_wrapper .portfolio-item { width: 45vw !important; min-width: 180px !important; }
+}
+@media (max-width: 600px) {
+  #portfolio_wrapper { gap: 18px 0; }
+  #portfolio_wrapper .portfolio-item { width: 98vw !important; min-width: 120px !important; }
+  #portfolio_wrapper .portfolio_img img { height: 120px; }
+  #portfolio_wrapper .portfolio-item figcaption { top: 80px; font-size: 0.95em; }
+}
+
+</style>
+
 <!--[if lt IE 9]>
     <script src="js/respond-1.1.0.min.js"></script>
     <script src="js/html5shiv.js"></script>
@@ -175,155 +255,122 @@
         <li><a href="#" data-filter=".727"><h5>Cybercriminology</h5></a></li>
       </ul>
     </div>
- <!-- Portfolio Wrapper -->
-    <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">  
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four 761 isotope-item effect-oscar">
-	   
-        <div class="portfolio_img"> 
-		<img src="img/portfolio_pic1.jpg" alt="Portfolio 1" width=auto height=auto> </div> 
-			<figcaption>		
-				<div>
-				  <a href="Chowdhury, Udipto - Week 12 FCM 761.pdf" class="fancybox"> 
-					<h2>Essay <span>1</span></h2>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four 401 isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 2"> </div>
-       <figcaption>		
-				<div>
-				  <a href="CSCI 401 Smart Cities Final Draft.pdf" class="fancybox"> 
-					<h2>Essay <span>2</span></h2>
-							<p></p>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-      <!--/Portfolio Item--> 
-      
-      <!-- Portfolio Item-->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 0px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four 374 isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 3"> </div>
-         <figcaption>		
-				<div>
-				  <a href="Chowdhury, Udipto__ HWs 8-10 CSCI 374 '21.pdf" class="fancybox"> 
-					<h2>Essay <span>3</span></h2>
-							<p></p>
-				  </a>
-				</div>
-			</figcaption>
-      </figure>
-      <!-- Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(0px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four 761 isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 4"> </div>
-       <figcaption>		
-				<div>
-				  <a href="Chowdhury, Udipto - Midterm FCM 761.pdf" class="fancybox"> 
-					<h2>Essay <span>4</span></h2>
-							<p></p>
-				  </a>
-				</div>
-			</figcaption>
-      </figure>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four 761 isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 5"> </div>
-       <figcaption>		
-				<div>
-				  <a href="Chowdhury, Udipto - FCM 761 Assignment 10.pdf" class="fancybox"> 
-					<h2>Essay <span>5</span></h2>
-							<p></p>
-				  </a>
-				</div>
-			</figcaption>
-      </figure>
-      <!--/Portfolio Item --> 
-      
-      <!-- Portfolio Item  -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(674px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four 727 isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 6"> </div>       
-       <figcaption>		
-				<div>
-				  <a href="Chowdhury, Udipto - FCM 727 Final Paper.pdf" class="fancybox"> 
-					<h2>Essay <span>6</span></h2>
-							<p></p>
-				  </a>
-				</div>
-			</figcaption>
-       </figure>
-      <!--/Portfolio Item --> 
-      <!-- Portfolio Item -->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four 727 isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 7"> </div>       
-      <figcaption>		
-				<div>
-				  <a href="Chowdhury, Udipto - Optional FCM 727.pdf" class="fancybox"> 
-					<h2>Essay <span>7</span></h2>
-							<p></p>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-      <!--/Portfolio Item -->
-      <!-- Portfolio Item -->
-            <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(1011px, 240px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four 761 isotope-item effect-oscar">
-              <div class="portfolio_img"> <img src="img/portfolio_pic9.jpg" alt="Portfolio 8"> </div>       
-            <figcaption>		
-              <div>
-                <a href="Chowdhury, Udipto - FCM 761 Final.pdf" class="fancybox"> 
-                <h2>Essay <span>8</span></h2>
-                    <p></p>
-                </a>
-              </div>
-            </figcaption>
-        </figure>
-      <!--/Portfolio Item --> 
-      <!-- Portfolio Item-->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 500px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four 230 isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/Portfolio_Pic2.jpg" alt="Website 1"> </div>
-        	<figcaption>		
-				<div>
-				  <a href="https://imaginelifestyles.com/" class="fancybox"> 
-					<h2 style="color: #8DB600;">Imagine Lifestyles</h2>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-    <!--/Portfolio Item -->   
-    <!-- Portfolio Item-->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 500px, 0px) scale3d(1, 1, 1); width: 337px; opacity: 1;" class="portfolio-item one-four 230 isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/Portfolio_Pic3.jpg" alt="Website 2"> </div>
-        	<figcaption>		
-				<div>
-				  <a href="https://www.vmug.com/" class="fancybox"> 
-					<h2 style="color: white;">VMUG</h2>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
-    <!--/Portfolio Item -->   
-    <!-- Portfolio Item-->
-      <figure style="position: absolute; left: 0px; top: 0px; transform: translate3d(337px, 500px, 0px) scale3d(1, 1, 1); width: 100px; opacity: 1;" class="portfolio-item one-four 230 isotope-item effect-oscar">
-        <div class="portfolio_img"> <img src="img/Portfolio4.jpg" alt="Website 3"> </div>
-        	<figcaption>		
-				<div>
-				  <a href="https://camporenda.com/" class="fancybox"> 
-					<h2 style="font-size: 30px; color: #FC8EAC;">Camporenda</h2>
-				  </a>
-				</div>
-			</figcaption>
-        </figure>
     <!-- Portfolio Wrapper -->
-    <div class="isotope fadeInLeft animated wow grid" style="position: relative; overflow: hidden; height: 480px;" id="portfolio_wrapper">  
+    <div class="isotope fadeInLeft animated wow grid" id="portfolio_wrapper">
+      <!-- Example Portfolio Items -->
+      <figure class="portfolio-item one-four 761 isotope-item effect-oscar">
+        <div class="portfolio_img"> 
+          <img src="img/portfolio_pic1.jpg" alt="Portfolio 1">
+        </div> 
+        <figcaption>		
+          <div>
+            <a href="Chowdhury, Udipto - Week 12 FCM 761.pdf" class="fancybox"> 
+              <h2>Essay <span>1</span></h2>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="portfolio-item one-four 401 isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic3.jpg" alt="Portfolio 2"></div>
+        <figcaption>		
+          <div>
+            <a href="CSCI 401 Smart Cities Final Draft.pdf" class="fancybox"> 
+              <h2>Essay <span>2</span></h2>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="portfolio-item one-four 374 isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic4.jpg" alt="Portfolio 3"></div>
+        <figcaption>		
+          <div>
+            <a href="Chowdhury, Udipto__ HWs 8-10 CSCI 374 '21.pdf" class="fancybox"> 
+              <h2>Essay <span>3</span></h2>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="portfolio-item one-four 761 isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic5.jpg" alt="Portfolio 4"></div>
+        <figcaption>		
+          <div>
+            <a href="Chowdhury, Udipto - Midterm FCM 761.pdf" class="fancybox"> 
+              <h2>Essay <span>4</span></h2>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="portfolio-item one-four 761 isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic6.jpg" alt="Portfolio 5"></div>
+        <figcaption>		
+          <div>
+            <a href="Chowdhury, Udipto - FCM 761 Assignment 10.pdf" class="fancybox"> 
+              <h2>Essay <span>5</span></h2>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="portfolio-item one-four 727 isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic7.jpg" alt="Portfolio 6"></div>       
+        <figcaption>		
+          <div>
+            <a href="Chowdhury, Udipto - FCM 727 Final Paper.pdf" class="fancybox"> 
+              <h2>Essay <span>6</span></h2>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="portfolio-item one-four 727 isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic8.jpg" alt="Portfolio 7"></div>       
+        <figcaption>		
+          <div>
+            <a href="Chowdhury, Udipto - Optional FCM 727.pdf" class="fancybox"> 
+              <h2>Essay <span>7</span></h2>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="portfolio-item one-four 761 isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/portfolio_pic9.jpg" alt="Portfolio 8"></div>       
+        <figcaption>		
+          <div>
+            <a href="Chowdhury, Udipto - FCM 761 Final.pdf" class="fancybox"> 
+              <h2>Essay <span>8</span></h2>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="portfolio-item one-four 230 isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/Portfolio_Pic2.jpg" alt="Website 1"> </div>
+        <figcaption>		
+          <div>
+            <a href="https://imaginelifestyles.com/" class="fancybox"> 
+              <h2 style="color: #8DB600;">Imagine Lifestyles</h2>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="portfolio-item one-four 230 isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/Portfolio_Pic3.jpg" alt="Website 2"> </div>
+        <figcaption>		
+          <div>
+            <a href="https://www.vmug.com/" class="fancybox"> 
+              <h2 style="color: white;">VMUG</h2>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <figure class="portfolio-item one-four 230 isotope-item effect-oscar">
+        <div class="portfolio_img"> <img src="img/Portfolio4.jpg" alt="Website 3"> </div>
+        <figcaption>		
+          <div>
+            <a href="https://camporenda.com/" class="fancybox"> 
+              <h2 style="font-size: 30px; color: #FC8EAC;">Camporenda</h2>
+            </a>
+          </div>
+        </figcaption>
+      </figure>
+      <!-- ...add or remove figures as needed, always keeping them inside #portfolio_wrapper... -->
     </div>
     <!--/Portfolio Wrapper --> 
     <div class="portfolio_btm"></div>
@@ -331,6 +378,7 @@
       <div class="clear"></div>
       <div id="project_data"></div>
     </div>
+  </div>
 </section>
 <!--/Portfolio --> 
 
