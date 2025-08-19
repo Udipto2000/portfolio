@@ -312,12 +312,12 @@ p {
 }
 
 .navStyle ul li a:hover {
-    color: #ED5441;
+    color: #7AC080;
 }
 
 .navStyle > li > a:hover, .nav > li > a:focus {
     text-decoration: none;
-    color: #ED5441;
+    color: #7AC080;
     background-color: transparent;
 }
 
@@ -327,14 +327,14 @@ p {
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
-    color: #CB143B;
+    color: #7AC080;
     background-color: transparent;
 }
 
 .navStyle > li.active > a,
 .navStyle > li.active > a:hover {
     text-decoration: none;
-    color: #ED5441;
+    color: #7AC080;
     background-color: transparent;
 }
 
@@ -451,14 +451,6 @@ a.read_more:hover {
     color: #ED5441;
     border: 1px solid #ED5441;
 }
-
-	
-
-
-
-
-
-
 
 /* Services
 ---------------------------------*/
@@ -612,7 +604,7 @@ a.contact_btn {
 }
 
 a.contact_btn:hover {
-    background: #ED5441;
+    background: #7AC080;
     color: #fff;
 }
 
