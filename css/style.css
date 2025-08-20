@@ -263,8 +263,8 @@ p {
 /* Nav Styles
 ---------------------------------*/
 .navbar-inverse {
-    background-color: transparent;
-    border-color: transparent;
+    background-color: black;
+    border-color: black;
 }
 
 .navbar {
@@ -354,11 +354,11 @@ p {
 ---------------------------------*/
 
 .top_cont_outer {
-    background: #ED5441;
+    background: #8F1709;
     position: relative;
 	
     background: #CE1139;
-	height:650px;
+	height:800px;
 }
 
 .hero_section {
