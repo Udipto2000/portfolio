@@ -315,27 +315,27 @@ p {
     color: #05730E;
 }
 
-.navStyle > li > a:hover, .nav > li > a:focus {
+.navStyle > li > a:hover, .nav > li > a:focus { 
     text-decoration: none;
     color: #05730E;
-    background-color: transparent;
+    background-color: black;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
     color: #CA133A;
-    background-color: transparent;
+    background-color: black;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     color: #05730E;
-    background-color: transparent;
+    background-color: black;
 }
 
 .navStyle > li.active > a,
 .navStyle > li.active > a:hover {
     text-decoration: none;
     color: #05730E;
-    background-color: transparent;
+    background-color: black;
 }
 
 .borderLeft {
@@ -608,9 +608,6 @@ a.contact_btn:hover {
     color: #fff;
 }
 
-.input-text {
-    background: transparent;
-}
 
 
 /* Portfolio
@@ -1879,7 +1876,7 @@ padding: 60px 0 50px;
 background:#ED5441;
 }
 .navbar-inverse .navbar-toggle {
-border-color: transparent;
+border-color: black;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
 background:none;
