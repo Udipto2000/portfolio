@@ -263,8 +263,8 @@ p {
 /* Nav Styles
 ---------------------------------*/
 .navbar-inverse {
-    background-color: black;
-    border-color: black;
+    background-color: transparent;
+    border-color: transparent;
 }
 
 .navbar {
@@ -318,24 +318,24 @@ p {
 .navStyle > li > a:hover, .nav > li > a:focus { 
     text-decoration: none;
     color: #05730E;
-    background-color: black;
+    background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > li > a:hover, .navbar-inverse .navbar-nav > li > a:focus {
     color: #CA133A;
-    background-color: black;
+    background-color: transparent;
 }
 
 .navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover, .navbar-inverse .navbar-nav > .active > a:focus {
     color: #05730E;
-    background-color: black;
+    background-color: transparent;
 }
 
 .navStyle > li.active > a,
 .navStyle > li.active > a:hover {
     text-decoration: none;
     color: #05730E;
-    background-color: black;
+    background-color: transparent;
 }
 
 .borderLeft {
@@ -1876,7 +1876,7 @@ padding: 60px 0 50px;
 background:#ED5441;
 }
 .navbar-inverse .navbar-toggle {
-border-color: black;
+border-color: transparent;
 }
 .navbar-inverse .navbar-toggle:hover, .navbar-inverse .navbar-toggle:focus{
 background:none;
